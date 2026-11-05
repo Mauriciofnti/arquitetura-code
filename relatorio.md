@@ -146,14 +146,14 @@ união-find do original). O sintoma foi o monólito aparecer com `diretas > 0`, 
 critérios (mesmo artefato, chamada síncrona, banco compartilhado).
 
 **Saída do `pytest`:**
+```
 tests/test_meu_quantum.py::test_monolito PASSED [ 20%]
 tests/test_meu_quantum.py::test_extracao_notificacoes PASSED [ 40%]
 tests/test_meu_quantum.py::test_extracao_notificacoes_banco_por_servico PASSED [ 60%]
 tests/test_meu_quantum.py::test_service_based PASSED [ 80%]
 tests/test_meu_quantum.py::test_service_based_banco_por_servico_com_fila PASSED [100%]
 ================================ 5 passed in 0.04s ================================
-
-text
+```
 
 ### 2.4 `--assincronas`
 python meu_quantum.py --assincronas "Pedidos>Notificacoes,Pagamentos>Notificacoes,Logistica>Notificacoes,Integracoes>Notificacoes" --banco-unico
